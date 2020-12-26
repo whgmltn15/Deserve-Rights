@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>searchResults</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <input type="text" placeholder="search" name="search" value="{{ request.form.search }}">
+        <button name="forwardBtn" type="submit">Search</button>
+    </form>
+    <form action="" method="POST">
+        <input type="text" placeholder="URL" name="URL" value="{{ request.form.URL }}">
+        <button type="submit">addURL</button>
+    </form>
+    <table border="1" width="400" align="center">
+        <thead>
+            <td>URL</td>
+        </thead>
+         {% for row in rows %}
+            <tr>
+                <td>{{ row["URL"] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

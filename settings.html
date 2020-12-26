@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus@">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Settings</title>
+    <style type="'text/ css">
+        body{ text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>information</h1>
+    <table border="1" width="400" align="center">
+        <thead>
+        <td>ID</td>
+        <td>PW</td>
+        <td>EMAIL</td>
+        </thead>
+    <h2>change PW</h2>
+    <form action="{{ url_for ('pwEdit') }}" method="POST">
+        <button type="submit">pwEdit</button>
+    </form>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row["ID"] }}</td>
+                <td>{{ row["PW"] }}</td>
+                <td>{{ row["EMAIL"] }}</td>
+            </tr>
+        {% endfor %}
+     </table>
+</body>
+</html>

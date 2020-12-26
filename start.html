@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>sign up</h1>
+        <form action="{{ url_for ('sign_up') }}" method="POST">
+            <button type="submit">sign up</button>
+        </form>
+        <h2>sign in</h2>
+        <form action="{{ url_for ('sign_in') }}" method="POST">
+            <button type="submit">sign in</button>
+        </form>
+    </div>
+</body>
+</html>

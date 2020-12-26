@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+    <div class="container">
+        <h1>main</h1>
+        <form action="{{ url_for ('searchResults') }}" method="POST">
+            <button name="forwardBtn" type="submit">goSearch</button>
+        </form>
+        <form method="POST" action="/matching">
+            <button type="submit">matching</button>
+        </form>
+        <form method="POST" action="/settings">
+            <button type="submit">settings</button>
+        </form>
+    </div>
+</body>
+</html>

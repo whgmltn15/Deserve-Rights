@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>matching</title>
+</head>
+<body>
+     <form action="" method="POST">
+        <input type="text" placeholder="gender" name="gender" value="{{ request.form.gender }}">
+             <input type="text" placeholder="age" name="age" value="{{ request.form.age }}">
+             <input type="text" placeholder="major" name="major" value="{{ request.form.major }}">
+             <button type="submit">search</button>
+    </form>
+
+     <table border="1" width="400" align="center">
+        <thead>
+            <td>user</td>
+            <tr>
+                <td>{{ row }}</td>
+            </tr>
+    </table>
+</body>
+</html>

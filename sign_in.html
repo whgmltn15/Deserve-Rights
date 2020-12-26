@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask - sign in</title>
+    <meta name="viewport" content="width=device-width",
+          initial-scale="1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+       <form action="" method="POST">
+            <input type="text" placeholder="ID"
+                   name="ID" value="{{ request.form.ID }}">
+            <br>
+            <input type="text" placeholder="PW"
+                   name="PW" value="{{ request.form.PW }}">
+            <button name="forwardBtn" type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
